@@ -83,6 +83,11 @@ body {
   text-decoration: none;
   border-radius: 2rem;
   box-shadow: 0px 4px 18px -4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+.page__cta:hover {
+  color: var(--color-white);
+  background-color: var(--color-magenta);
 }
 .page__icons {
   display: flex;
@@ -94,6 +99,14 @@ body {
   border: 1px solid var(--color-white);
   border-radius: 50%;
   padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.page__icon-box:hover {
+  border-color: var(--color-magenta);
+}
+.page__icon-box:hover > .page__icon {
+  fill: var(--color-magenta);
 }
 .page__icon {
   display: block;
