@@ -23,11 +23,23 @@ body {
   background-color: var(--color-violet);
   background-image: url(../images/bg-mobile.svg);
   background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (min-width: 45em) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+  }
 }
 
 .container {
   width: 84%;
+  max-width: 80rem;
   margin: 0 auto;
+}
+@media only screen and (min-width: 45em) {
+  .container {
+    width: 90%;
+  }
 }
 
 .page {
@@ -91,6 +103,39 @@ body {
   fill: var(--color-white);
 }
 
+@media only screen and (min-width: 45em) {
+  .page {
+    margin-top: 3.5rem;
+  }
+  .page__logo {
+    margin-bottom: 5rem;
+    width: 14rem;
+  }
+  .page__main {
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+  }
+  .page__mockup {
+    flex: 3;
+    margin-bottom: 1rem;
+  }
+  .page__copy {
+    flex: 2;
+    text-align: left;
+  }
+  .page__heading {
+    width: 90%;
+    font-size: 2.5rem;
+  }
+  .page__cta {
+    margin: 0rem 0rem 12rem 0rem;
+    text-align: center;
+  }
+  .page__icons {
+    justify-content: flex-end;
+  }
+}
 .attribution {
   display: none;
 }

@@ -2,5 +2,10 @@
 
 .container {
   width: 84%;
+  max-width: 80rem;
   margin: 0 auto;
+
+  @media only screen and (min-width: $breakpoint-mobile) {
+    width: 90%;
+  }
 }

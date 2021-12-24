@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
+$breakpoint-mobile: 45em;
+
 :root {
   --color-violet:  hsl(257, 40%, 49%);
   --color-magenta: hsl(300, 69%, 71%);
@@ -24,4 +26,9 @@ body {
   background-color: var(--color-violet);
   background-image: url(../images/bg-mobile.svg);
   background-repeat: no-repeat;
+  background-size: contain;
+
+  @media only screen and (min-width: $breakpoint-mobile) {
+    background-image: url(../images/bg-desktop.svg);
+  }
 }
