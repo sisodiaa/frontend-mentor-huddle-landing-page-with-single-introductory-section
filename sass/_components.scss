@@ -1,0 +1,77 @@
+@use 'base' as *;
+
+.page {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+  &__logo {
+    display: block;
+    margin-bottom: 3.25rem;
+    width: 8rem;
+    height: auto;
+  }
+
+  &__mockup {
+    margin-bottom: 4rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__copy {
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  &__heading {
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &__paragraph {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+
+  &__cta {
+    display: block;
+    margin: 0 auto 5rem;
+    padding: 1rem 0;
+    width: 14rem;
+    color: var(--color-violet);
+    background-color: var(--color-white);
+    text-decoration: none;
+    border-radius: 2rem;
+    box-shadow: 0px 4px 18px -4px hsla(0, 0%, 0%, 0.5);
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.75rem;
+
+  }
+
+  &__icon-box {
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+
+  &__icon {
+    display: block;
+    margin: auto;
+    width: 1rem;
+    height: 1rem;
+    fill: var(--color-white);
+  }
+}
+
+.attribution {
+  display: none;
+}
